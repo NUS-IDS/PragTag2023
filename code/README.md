@@ -1,7 +1,8 @@
 
 Most code assumes the input files are in the JSON format used in the competition.
 
-<b>For converting JSON files to T5/FlanT5 format </b>, use the code in 
+<ul> Few-shot and Full-data Runs</ul>
+For converting JSON files to T5/FlanT5 format , use the code in 
 
 1. convertData_FlanT5.py (args1: data.json, args2: out.csv)
 2. convertData_T5.py     (args1: data.json, args2: outfile-pfx (for creating .source and .target files)
