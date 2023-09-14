@@ -33,4 +33,4 @@ and args2: outfile.json
 
 1. qa_similarity.py (args1: data.json, args2: out-preds.json and uses QA)
 2. zs_flanxl.py (args1: data.json, args2: out-preds.json using FlanXL model)
-3. 
+   
