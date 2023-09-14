@@ -1,7 +1,7 @@
 
 Most code assumes the input files are in the JSON format used in the competition.
 
-For converting JSON files to T5/FlanT5 format, use the code in 
+<b>For converting JSON files to T5/FlanT5 format </b>, use the code in 
 
 1. convertData_FlanT5.py (args1: data.json, args2: out.csv)
 2. convertData_T5.py     (args1: data.json, args2: outfile-pfx (for creating .source and .target files)
@@ -27,3 +27,7 @@ getAugDataForT5.py . This code takes in two arguments with expected file names a
 args1: data-dir containing data.json, data.json, flanT5_preds.json, T5_preds.json, RoBERTa_preds.json 
 and args2: outfile.json
 
+Zero-shot runs
+1. qa_similarity.py (args1: data.json, args2: out-preds.json and uses QA)
+2. zs_flanxl.py (args1: data.json, args2: out-preds.json using FlanXL model)
+3. 
