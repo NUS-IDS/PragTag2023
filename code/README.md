@@ -1,7 +1,15 @@
 
-Most code assumes the input files are in the JSON format used in the competition.
+In the "full-data"-setting, our solution uses a total of 3 models based on RoBERTa, T5-large, and FlanT5-large to tentatively
+label the unlabeled data as a form of data augmentation.
 
-<b> Few-shot and Full-data Runs</b>
+The RoBERTa model fine-tuning and prediction code was provided in the starting_kit provided in the competition
+(https://codalab.lisn.upsaclay.fr/competitions/13334#participate-get_starting_kit)
+The data files provided in the competition are in a specific JSON format. Any references to "*data.json" refers to this format.
+
+The following instructions are for running T5 and FlanT5 models used in our solution.
+
+
+<b> Few-shot and Full-data runs</b>
 
 For converting JSON files to T5/FlanT5 format , use the code in 
 
@@ -21,11 +29,10 @@ For obtaining predictions use
 1. predict_FlanT5.py (args1: model/tokenizer-dir, args2: inp-data.json, args3: out-preds.json)
 2. predict_T5.py (args1: model/tokenizer path, args2: inp-data.json, args3: out-preds.json)
 
-For RoBERTa model fine-tuning and prediction code, please use the starting_kit provided in the competition
-(https://codalab.lisn.upsaclay.fr/competitions/13334#participate-get_starting_kit)
 
 For using unlabeled data, first parse the files to JSON format, predict using the various models, then combine using
-getAugDataForT5.py . This code takes in two arguments with expected file names as follows:
+getAugDataForT5.py . 
+This code takes in two arguments with <b>expected file names</b> as follows:
 args1: data-dir containing data.json, data.json, flanT5_preds.json, T5_preds.json, RoBERTa_preds.json 
 and args2: outfile.json
 
