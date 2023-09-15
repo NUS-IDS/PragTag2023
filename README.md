@@ -14,6 +14,3 @@ https://codalab.lisn.upsaclay.fr/competitions/13334
 A version of the dataset is also available at the following github
 https://github.com/UKPLab/f1000rd
 
-
-
-
