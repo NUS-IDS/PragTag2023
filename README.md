@@ -7,10 +7,13 @@ different models described in the system description paper.
 
 Our models are essentially straightforward fine-tuned variations of the versions in HuggingFace.
 
+**Note** We do not share any data with this repository. The code assumes you have the data files 
+(split into train/test/dev portions in the competition-specified JSON format)
 
-The PragTag competition datasets are available from the competition organizers
+Please use the data files either from the competition organizers
 https://codalab.lisn.upsaclay.fr/competitions/13334
 
-A version of the dataset is also available at the following github
+or the following github
 https://github.com/UKPLab/f1000rd
+
 
