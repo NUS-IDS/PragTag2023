@@ -33,7 +33,7 @@ For obtaining predictions use
 For using unlabeled data, first parse the files to JSON format, predict using the various models, then combine using
 getAugDataForT5.py . 
 This code takes in two arguments with <b>expected file names</b> as follows:
-args1: data-dir containing data.json, data.json, flanT5_preds.json, T5_preds.json, RoBERTa_preds.json 
+args1: data-dir containing data.json, flanT5_preds.json, T5_preds.json, RoBERTa_preds.json 
 and args2: outfile.json
 
 <b>Zero-shot runs</b>
